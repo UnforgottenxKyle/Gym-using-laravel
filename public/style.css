@@ -1,0 +1,473 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+    --black: #333;
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    scroll-behavior: smooth;
+}
+
+main {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+}
+nav {
+    display: flex;
+    height: 115px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px;
+}
+
+nav .logo-name {
+    color: #333;
+    font-size: 34px;
+    font-weight: bold;
+    flex: 1;
+}
+
+nav .nav-links .side-menu {
+    display: flex;
+    list-style: none;
+    gap: 60px;
+}
+nav .nav-links .side-menu a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 600;
+}
+/* end of navbar */
+
+main .hero-main {
+    display: flex;
+    flex-direction: column;
+    padding: 0 100px;
+    height: calc(100vh - 115px);
+    background-image: url("Escultura.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: flex-end;
+    color: var(--black);
+}
+
+main .hero-main .new-arrival {
+    display: flex;
+    flex-direction: column;
+    height: 420px;
+    width: 640px;
+    background: whitesmoke;
+    border-radius: 10px;
+    padding: 40px;
+}
+main .hero-main .new-arrival h1 {
+    font-weight: 700;
+    font-size: 50px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+main .hero-main .new-arrival p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 300%;
+}
+main .hero-main .new-arrival button {
+    margin: 15px 0%;
+    background-color: var(--black);
+    color: whitesmoke;
+    border-radius: 50px;
+    padding: 25px 70px;
+    width: 250px;
+    height: 70px;
+}
+
+/* end of hero */
+
+main .info-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 150px;
+    background-color: whitesmoke;
+    padding: 0 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: var(--black);
+}
+
+main .info-main .ship {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+main .info-main .ship h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+main .info-main .ship span {
+    font-size: 16px;
+    font-weight: 400;
+}
+main .info-main .support {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+main .info-main .support h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+main .info-main .support span {
+    font-size: 16px;
+    font-weight: 400;
+}
+main .info-main .auth {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+main .info-main .auth h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+main .info-main .auth span {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* end of info */
+
+main .inspi-main {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 250px 1fr;
+    flex-direction: column;
+    text-align: center;
+}
+main .inspi-main .inspi-title {
+    display: flex;
+    background: var(--black);
+    padding: 0 100px;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+}
+
+main .inspi-main .inspi-images {
+    display: flex;
+    padding: 0 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+main .inspi-main .inspi-images .image1 img {
+    border-radius: 50px 0px 0px 0px;
+}
+main .inspi-main .inspi-images .image2 img {
+    padding-bottom: 60px;
+}
+main .inspi-main .inspi-images .image3 img {
+    border-radius: 0px 0px 50px 0px;
+}
+
+/* inspiration-main ends */
+
+main .physique-main {
+    background-color: var(--black);
+    height: 100vh;
+    display: flex;
+    padding: 0 100px;
+    justify-content: space-evenly;
+    color: whitesmoke;
+}
+main .physique-main .physique-text {
+    place-self: center;
+    text-align: start;
+}
+main .physique-main .physique-text h1 {
+    font-weight: 700;
+    font-size: 32px;
+}
+main .physique-main .physique-text p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+main .physique-main .physique-text button {
+    padding: 20px 40px;
+    border-radius: 50px;
+    border: none;
+    background: whitesmoke;
+    color: var(--black);
+    font-weight: 700;
+    font-size: 16px;
+}
+main .physique-main .physique-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .physique-main .physique-image img {
+    border-radius: 50px 5px 50px 5px;
+    border: 2px solid whitesmoke;
+}
+/*Physique ends  */
+
+main .product-main {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 200px 1fr;
+}
+main .product-main .product-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+main .product-main .product-title h1 {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--black);
+    margin: 0;
+}
+main .product-main .product-title p {
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--black);
+    margin: 0;
+}
+main .product-main .products {
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 450px) 1fr;
+    grid-template-rows: 650px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+}
+main .product-main .products .product img {
+    border-radius: 10px;
+}
+main .product-main .products .product h1 {
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--black);
+    margin: 20px 0;
+}
+main .product-main .products .product p {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--black);
+    margin: 0;
+}
+main .product-main .products .product:nth-child(1) {
+    grid-column: 2/3;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+}
+main .product-main .products .product:nth-child(2) {
+    grid-column: 3/4;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+}
+main .product-main .products .product:nth-child(3) {
+    grid-column: 4/5;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+}
+/* end of products */
+
+main .mail-main {
+    height: 300px;
+    padding: 0 100px;
+    background: #3b3b3b;
+}
+main .mail-main .mail-text {
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    letter-spacing: 0cm;
+}
+main .mail-main .mail-text h1 {
+    font-weight: 700;
+    font-size: 32px;
+}
+main .mail-main .mail-text p {
+    font-weight: 400;
+    font-size: 20px;
+}
+main .mail-main .mail-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+main .mail-main .mail-input input {
+    height: 70px;
+    width: 350px;
+    padding-left: 40px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+}
+main .mail-main .mail-input button {
+    height: 76px;
+    width: 180px;
+    margin-left: -70px;
+    color: whitesmoke;
+    background: #303030;
+    border: none;
+    border-radius: 3px;
+}
+/* ends of mail */
+
+main footer {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    height: 400px;
+    background-color: #272727;
+    color: whitesmoke;
+    padding: 0 100px;
+    gap: 30px;
+}
+main footer .footer-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 35px;
+    justify-content: center;
+}
+main footer .footer-text h1 {
+    font-weight: 700;
+    font-size: 24px;
+}
+main footer .footer-text p {
+    font-weight: 400;
+    font-size: 16px;
+}
+main footer .footer-text .links {
+    display: flex;
+    gap: 15px;
+}
+main footer .footer-text .links span a i {
+    color: whitesmoke;
+}
+main footer .footer-images {
+    display: grid;
+    grid-template-rows: 150px 1fr;
+}
+main footer .footer-images .title {
+    display: flex;
+    align-items: end;
+}
+main footer .footer-images .title h1 {
+    font-weight: 700;
+    font-size: 24px;
+}
+main footer .footer-images .images {
+    display: grid;
+    grid-template-columns: repeat(4, 250px) 1fr;
+    grid-template-rows: 250px;
+}
+
+/* Login page */
+
+.main-login {
+    background: url("Escultura.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+.main-login .container {
+    display: grid;
+    grid-template-rows: 120px 1fr;
+    border: 5px solid white;
+    border-radius: 20px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    width: 40%;
+    height: 70%;
+    place-self: center;
+    color: whitesmoke;
+}
+.main-login .container .div1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: solid 2px white;
+}
+.main-login .container h1 {
+    font-size: xx-large;
+    font-weight: bold;
+}
+.main-login .container .div2 {
+    gap: 100px;
+    padding: 100px 50px;
+}
+.main-login .container .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-login .container .form input {
+    width: 80%;
+    height: 50px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 4px solid white;
+    color: white;
+    font-weight: 700;
+    font-size: larger;
+}
+.main-login .container .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+.main-login .container .button input {
+    padding: 10px 40px 10px 40px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+/* Desktop/Laptop */
+@media (max-width: 2500px) {
+    main nav .burger-menu {
+        display: none;
+    }
+}
